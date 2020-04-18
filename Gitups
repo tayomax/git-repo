@@ -1,0 +1,13 @@
+There is power, power, wonder working power in the blood of the lamp, x2
+There is power, power, wonder working power in the blood of Jesus Christ.
+Heavenly Lord your name is mighty, your name is wonderful, your name is powerful,
+We worship youi Lord for you are mighty you got yhe whole world in your hand
+You got the whole world in your hand, You got the whole wide world in your hand
+You got the whole world in your hand
+
+FROM ubuntu:latest
+MAINTAINER Sam Tayo Oni
+RUN apt-get update
+RUN apt-get install -y nginx
+ENTRYPOINT ["/usr/sbin/nginx","-g","daemon-off"]
+EXPOSE 80
